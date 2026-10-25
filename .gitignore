@@ -1,0 +1,39 @@
+# Data and Raw Export Files
+data/
+*.parquet
+*.xlsx
+*.xls
+*.csv
+*.pkl
+md files/
+
+# Scratch & Temporary Testing Files
+scratch/
+test_*.py
+
+# Notebooks & Raw UI mockups
+notebooks/
+haldirams_temp/
+
+# Python Bytecode, Caches & Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+.venv/
+venv/
+env/
+ENV/
+
+# Secrets, Credentials & Local Configs
+.env
+.streamlit/secrets.toml
+
+# IDE, Agent Artifacts & Browser Session Logs
+.gemini/
+.agents/
+.system_generated/
+.tempmediaStorage/
+brain/
+*.webp
+*.png.webp
