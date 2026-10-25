@@ -2,11 +2,11 @@
 ================================================================================
 Haldiram's International Export Analytics Pipeline - Demand Forecasting Module
 ================================================================================
-Author: Senior Data Scientist (Technical Lead)
+Author: Aanya
 Project: Haldiram's Final-Year Export Sales & ML Analytics
 Module: Hierarchical Monthly Demand Forecasting (SARIMAX vs. Prophet vs. XGBoost)
 
-Viva Defense Notes:
+Forecasting Methodology & Architecture Notes:
 - Aggregation Grain: Monthly demand (Quantity in KG and Invoiced Amount in INR)
   at (Zone x Category) and (Country x Category) grains. Monthly aggregation cancels out
   daily dispatch noise and aligns with FMCG supply chain factory replenishment cycles.

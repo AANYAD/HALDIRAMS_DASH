@@ -2,11 +2,11 @@
 ================================================================================
 Haldiram's International Export Analytics Pipeline - Segmentation Module
 ================================================================================
-Author: Senior Data Scientist (Technical Lead)
+Author: Aanya
 Project: Haldiram's Final-Year Export Sales & ML Analytics
 Module: B2B Customer & Product Portfolio Clustering (K-Means + PCA + Persona Profiling)
 
-Viva Defense Notes:
+Segmentation Methodology & Architecture Notes:
 - Dimensional Feature Engineering:
   1. Monetary Value: Total export invoiced revenue in INR (lifetime export power).
   2. Order Frequency & Breadth: Total unique export shipments and active SKU count.

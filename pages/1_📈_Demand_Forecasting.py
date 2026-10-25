@@ -2,7 +2,7 @@
 ================================================================================
 Haldiram's International Export Analytics Pipeline - Demand Forecasting Page
 ================================================================================
-Author: Senior Data Scientist (Technical Lead)
+Author: Aanya
 Project: Haldiram's Final-Year Export Sales & ML Analytics
 Design System: Venture CRM (Analytics / Activity UI Reference)
 ================================================================================

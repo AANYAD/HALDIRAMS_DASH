@@ -2,11 +2,11 @@
 ================================================================================
 Haldiram's International Export Analytics Pipeline - Price Elasticity Module
 ================================================================================
-Author: Senior Data Scientist (Technical Lead)
+Author: Aanya
 Project: Haldiram's Final-Year Export Sales & ML Analytics
 Module: Econometric Price Elasticity Modeling & SAP ZPR8 Validation
 
-Viva Defense Notes:
+Econometric Methodology Notes:
 - Econometric Model Specification:
   Uses the classic Log-Log (Constant Elasticity) Ordinary Least Squares (OLS) specification:
       ln(Q_t) = beta_0 + beta_1 * ln(P_t) + sum(gamma_m * Month_mt) + delta * Festive_t + epsilon_t
@@ -18,7 +18,7 @@ Viva Defense Notes:
   - |epsilon_p| > 1.0: Elastic Demand (Price increases lead to disproportionate volume drop).
   - |epsilon_p| < 1.0: Inelastic Demand (Haldiram's ethnic brand loyalty allows pricing power).
   - |epsilon_p| = 1.0: Unitary Elastic.
-- Strict Viva Econometric Disclaimers:
+- Econometric Modeling Disclaimers:
   - Correlational, NOT Causal: Models observational transaction records, not a controlled A/B test.
   - Endogeneity & Supply Shifts: Export container freight spikes and raw commodity inflation
     shift supply and demand curves simultaneously.
@@ -86,7 +86,7 @@ class PriceElasticityEngine:
         """
         Cross-validates realized transaction price against official SAP ZPR8 Export Price condition record.
         
-        Why: Viva defense requirement. Proves derived prices reflect genuine underlying export tariff sheets.
+        Why: Proves derived prices reflect genuine underlying export tariff sheets.
         """
         all_codes = [material_code] + SKU_2025_MAPPING.get(material_code, [])
         sku_df = self.df[self.df['material_code'].isin(all_codes)].copy()

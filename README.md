@@ -1,6 +1,6 @@
 # Haldiram's Export Sales Analytics & ML Pipeline
 
-An enterprise-grade FMCG export intelligence platform and machine learning decision suite built for Haldiram's international sales operations across multiple fiscal years. The system integrates data ingestion, multi-model demand forecasting, B2B customer and SKU segmentation, econometric price elasticity modeling, and interactive executive reporting into a unified, responsive dashboard architecture.
+An FMCG export intelligence platform and machine learning decision suite built for Haldiram's international sales operations, analyzing about four years of SAP sales data (Apr 2021 to May 2025). The system integrates data ingestion, multi-model demand forecasting, B2B customer and SKU segmentation, econometric price elasticity modeling, and interactive executive reporting into a unified, responsive dashboard architecture.
 
 ---
 
@@ -12,10 +12,10 @@ The application comprises five specialized analytics pages plus an executive bri
    High-level executive command center displaying core export KPIs, multi-fiscal-year temporal trends, geographic distribution across global export zones and destination countries, product category breakdowns, and entity-level B2B concentration analysis.
 
 2. **Hierarchical Demand Forecasting (`1_📈_Demand_Forecasting.py`)**  
-   Multi-model supply chain forecasting engine benchmarking SARIMAX (with seasonal festival regressors), Prophet (additive trend decomposition with holiday lead-times), and Lagged-Feature XGBoost across major product categories. Evaluates performance using walk-forward holdout validation on FMCG-standard MAPE (%) and RMSE metrics.
+   Multi-model supply chain forecasting engine benchmarking SARIMAX (with seasonal festival regressors), Prophet (additive trend decomposition with holiday lead-times), and Lagged-Feature XGBoost across major product categories. Evaluates performance using time-based 9-month holdout on FMCG-standard MAPE (%) and RMSE metrics.
 
 3. **B2B Customer & Product Segmentation (`2_🎯_Customer_&_Product_Segmentation.py`)**  
-   Unsupervised clustering framework utilizing StandardScaler, K-Means clustering, and 2D Principal Component Analysis (PCA). Segments B2B distributor accounts and product SKUs across revenue volume, order frequency, average order value, demand volatility (CV), and net margin proxies.
+   Unsupervised clustering framework utilizing StandardScaler, K-Means clustering, and 2D Principal Component Analysis (PCA). Segments B2B distributor accounts and product SKUs across revenue volume, order frequency, average order value, demand volatility (CV), and operational contribution metrics.
 
 4. **Econometric Price Elasticity Studio (`3_🏷️_Price_Elasticity.py`)**  
    Log-Log Ordinary Least Squares (OLS) econometric regression suite modeling price responsiveness for top-volume global export SKUs. Includes validation against export price conditions and interactive price-volume-revenue simulation scenarios.
@@ -24,7 +24,7 @@ The application comprises five specialized analytics pages plus an executive bri
    Dynamic tabular data exploration environment equipped with multi-dimensional filtering (by year, category, zone, and export metrics), interactive sorting, summary statistics, and secure CSV data export.
 
 6. **Executive Briefings & Technical Notes (`5_📝_Notes_&_Executive_Briefings.py`)**  
-   Comprehensive methodology documentation covering pipeline design, schema harmonization, econometric model specifications, clustering rationale, and viva defense references.
+   Comprehensive methodology documentation covering pipeline design, schema harmonization, econometric model specifications, and clustering rationale.
 
 ---
 

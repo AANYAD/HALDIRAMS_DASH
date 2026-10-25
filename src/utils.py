@@ -801,7 +801,7 @@ def render_section_header(icon_name: str, title: str, color: str = "#374151"):
 
 # ── Graph note box ────────────────────────────────────────────────────────────
 
-def render_graph_note(title: str, explanation: str, viva_point: Optional[str] = None):
+def render_graph_note(title: str, explanation: str, technical_note: Optional[str] = None, **kwargs):
     """Renders an explanatory note box below every chart."""
     pin_icon  = lc("map-pin", 15, "#0F172A", 2.0)
     st.markdown(f"""

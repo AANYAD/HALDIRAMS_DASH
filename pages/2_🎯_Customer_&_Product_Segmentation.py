@@ -2,7 +2,7 @@
 ================================================================================
 Haldiram's International Export Analytics Pipeline - Segmentation Page
 ================================================================================
-Author: Senior Data Scientist (Technical Lead)
+Author: Aanya
 Project: Haldiram's Final-Year Export Sales & ML Analytics
 Design System: Venture CRM (Task Details / Analytics UI Reference)
 ================================================================================

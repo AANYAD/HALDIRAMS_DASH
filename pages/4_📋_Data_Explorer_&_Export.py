@@ -2,7 +2,7 @@
 ================================================================================
 Haldiram's International Export Analytics Pipeline - Data Explorer Page
 ================================================================================
-Author: Senior Data Scientist (Technical Lead)
+Author: Aanya
 Project: Haldiram's Final-Year Export Sales & ML Analytics
 Design System: Venture CRM (People / Companies UI Reference)
 ================================================================================
@@ -71,7 +71,7 @@ with tab_sales:
         available_cntries = sorted(df_sales['country'].dropna().unique())
         sel_cntry = st.multiselect("Country Filter", options=available_cntries)
     with col_f3:
-        search_query = st.text_input("Search Material / SKU / Customer Name", placeholder="e.g. Bhujia, Samosa, Anmol...")
+        search_query = st.text_input("Search Material / SKU / Customer Name", placeholder="e.g. Bhujia, Samosa...")
 
     display_sales = df_sales[df_sales['fiscal_year'].isin(sel_fy)] if sel_fy else df_sales
     if sel_cntry:
@@ -119,8 +119,8 @@ with tab_sales:
 
     render_graph_note(
         title="Harmonized Transaction Registry",
-        explanation="Standardizes heterogeneous invoice records from 5 fiscal years, aligning currency fields, quantities in KG, and SAP product hierarchy codes into a unified analytical structure.",
-        viva_point="Data harmonization eliminates schema drift across multi-year SAP table exports without losing line-item granularity."
+        explanation="Standardizes heterogeneous invoice records across fiscal years, aligning currency fields, quantities in KG, and SAP product hierarchy codes into a unified analytical structure.",
+        technical_note="Data harmonization eliminates schema drift across multi-year SAP table exports without losing line-item granularity."
     )
 
 with tab_cust_m:
@@ -129,7 +129,7 @@ with tab_cust_m:
         <div class="content-card-title">
             <span>Dimensional Customer Master Record</span>
         </div>
-        <div class="content-card-subtitle">Lifetime metrics for all 173 international B2B distributors</div>
+        <div class="content-card-subtitle">Lifetime metrics across international B2B distributors</div>
     </div>
     """, unsafe_allow_html=True)
     st.dataframe(df_cust, use_container_width=True, hide_index=True)
@@ -140,7 +140,7 @@ with tab_prod_m:
         <div class="content-card-title">
             <span>Dimensional Product Master Record</span>
         </div>
-        <div class="content-card-subtitle">Aggregated metrics across 3,488 export materials and SKUs</div>
+        <div class="content-card-subtitle">Aggregated metrics across export materials and SKUs</div>
     </div>
     """, unsafe_allow_html=True)
     st.dataframe(df_prod, use_container_width=True, hide_index=True)
@@ -149,7 +149,7 @@ with tab_schema:
     st.markdown("""
     <div class="content-card">
         <div class="content-card-title">
-            <span>5-Year Schema Audit & Attribute Dictionary</span>
+            <span>Consolidated Schema Audit & Attribute Dictionary</span>
         </div>
         <div class="content-card-subtitle">Audit of data types, completeness, and non-null counts</div>
     </div>

@@ -2,11 +2,11 @@
 ================================================================================
 Haldiram's International Export Analytics Pipeline - Data Engineering Module
 ================================================================================
-Author: Senior Data Scientist (Technical Lead)
+Author: Aanya
 Project: Haldiram's Final-Year Export Sales & ML Analytics
 Module: Data Ingestion, Schema Drift Resolution, Harmonization & Master Extraction
 
-Viva Defense Notes:
+Architecture & Methodology Notes:
 - Dynamic Ingestion: Uses pathlib to scan directory trees for multi-year files.
 - Memory-Efficient Markdown Streaming: Parses line-by-line markdown tables 
   instead of loading entire multi-megabyte string structures into RAM.

@@ -2,7 +2,7 @@
 ================================================================================
 Haldiram's International Export Analytics Pipeline - Price Elasticity Page
 ================================================================================
-Author: Senior Data Scientist (Technical Lead)
+Author: Aanya
 Project: Haldiram's Final-Year Export Sales & ML Analytics
 Design System: Venture CRM (Task Details / Pricing Studio UI Reference)
 ================================================================================
@@ -219,7 +219,7 @@ if regression_results['success']:
         render_graph_note(
             title="Log-Log Ordinary Least Squares (OLS) Demand Curve",
             explanation="In a double-logarithmic specification, the regression slope directly estimates constant price elasticity of demand (beta). Seasonal quarterly dummies control for festival shifts.",
-            viva_point="Taking natural logarithms linearizes the multiplicative demand function Q = A * P^beta, allowing direct interpretation of beta as percentage change in demand per 1% change in price."
+            technical_note="Taking natural logarithms linearizes the multiplicative demand function Q = A * P^beta, allowing direct interpretation of beta as percentage change in demand per 1% change in price."
         )
 
     with col_zpr8_chart:
@@ -265,7 +265,7 @@ if regression_results['success']:
             render_graph_note(
                 title="SAP ZPR8 Cross-Validation",
                 explanation="Validates that transaction-level realized export prices (amount_inr / quantity_kg) correspond to the baseline FOB condition sheet rates stored in SAP.",
-                viva_point="This validation confirms that empirical price fluctuations reflect genuine contractual tariff adjustments rather than unit conversion artifacts."
+                technical_note="This validation confirms that empirical price fluctuations reflect genuine contractual tariff adjustments rather than unit conversion artifacts."
             )
         else:
             st.info("ZPR8 pricing condition field is actively captured in recent fiscal years. Realized transaction price serves as primary index.")
